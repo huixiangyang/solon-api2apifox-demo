@@ -1,0 +1,17 @@
+server.port: 6001
+
+solon:
+  app:
+    name: 'solon-api2apifox-demo'
+    group: 'test'
+  env: dev
+  logging.logger:
+    root:
+      level: INFO
+  logging.appender:
+    file:
+      enable: true
+      level: INFO
+      path: logs/solon-api2apifox-demo.log
+      max-size: 10MB
+      max-history: 30
